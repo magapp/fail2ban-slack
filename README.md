@@ -8,7 +8,6 @@ Install with these steps:
 * Setup an incoming web hook on you Slack account and remeber the URL.
 * In a jail, type something like this, replace slack hook with the URL from step 2.
 
-
 	[wordpress]
 	enabled  = true
 	filter   = wordpress
