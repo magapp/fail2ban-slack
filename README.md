@@ -4,9 +4,10 @@ This is an action for fail2ban that notify Slack which IP and country the IP bel
 
 Install with these steps:
 
-* copy slack.py to /etc/fail2ban/action.d
-* setup an incoming web hook on you Slack account and remeber the URL
-* in a jail, type something like this, replace slack hook with the URL from step 2
+* Copy slack.py to /etc/fail2ban/action.d.
+* Setup an incoming web hook on you Slack account and remeber the URL.
+* In a jail, type something like this, replace slack hook with the URL from step 2.
+
 
 	[wordpress]
 	enabled  = true
