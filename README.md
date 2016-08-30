@@ -8,12 +8,13 @@ Install with these steps:
 * Setup an incoming web hook on you Slack account and remeber the URL.
 * In a jail, type something like this, replace slack hook with the URL from step 2.
 
-	[wordpress]
-	enabled  = true
-	filter   = wordpress
-	port = http,https
-	logpath  = /var/log/apache2/access.log
-	action = slack.py[hookurl="https://hooks.slack.com/services/T040xxxxx/xxxxxxxxxx/xxxxxxxxx"]
+```[wordpress]
+enabled = true
+filter = wordpress
+port = http,https
+logpath = /var/log/apache2/access.log
+action = slack.py[hookurl="https://hooks.slack.com/services/T040xxxxx/xxxxxxxxxx/xxxxxxxxx"]
+```
 
 Banned IP adresses will now show up on slack togheter with the country the IP originates from.
 
